@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/cglogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/cglogo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/cglogo.png">
+  <link rel="mask-icon" href="/images/cglogo.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.clappinggame.net","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="拍手游戏玩法版本：4.5 发布日期：2022年1月24日              注意这里的游戏玩法是本站提供的1v1拍手游戏玩法(多人玩法即将推出，敬请期待)，可能与其他拍手游戏玩法有区别。                         版权声明本文为clappinggame.net原创，依据 CC BY-SA 4.0 许可证进行授权，转载请附上出处链接及本声明。            招式">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文档">
+<meta property="og:url" content="https://www.clappinggame.net/docs/index.html">
+<meta property="og:site_name" content="拍手游戏">
+<meta property="og:description" content="拍手游戏玩法版本：4.5 发布日期：2022年1月24日              注意这里的游戏玩法是本站提供的1v1拍手游戏玩法(多人玩法即将推出，敬请期待)，可能与其他拍手游戏玩法有区别。                         版权声明本文为clappinggame.net原创，依据 CC BY-SA 4.0 许可证进行授权，转载请附上出处链接及本声明。            招式">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-17T14:40:50.000Z">
+<meta property="article:modified_time" content="2022-06-07T15:21:36.332Z">
+<meta property="article:author" content="clappinggame">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.clappinggame.net/docs/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>文档 | 拍手游戏
+</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">拍手游戏</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">clappinggame</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-文档">
+
+    <a href="/docs/" rel="section"><i class="fa fa-file-alt fa-fw"></i>文档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+  
+  
+
+          <div class="content page posts-expand">
+            
+
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">文档
+</h1>
+
+<div class="post-meta">
+  
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h1 id="拍手游戏玩法"><a href="#拍手游戏玩法" class="headerlink" title="拍手游戏玩法"></a>拍手游戏玩法</h1><p>版本：4.5 发布日期：2022年1月24日</p>
+<div class="note default">
+            <p><strong>注意</strong><br>这里的游戏玩法是本站提供的1v1拍手游戏玩法(多人玩法即将推出，敬请期待)，可能与其他拍手游戏玩法有区别。</p>
+          </div>
+<div class="note default">
+            <p><strong>版权声明</strong><br>本文为clappinggame.net原创，依据 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> 许可证进行授权，转载请附上出处链接及本声明。</p>
+          </div>
+<h2 id="招式表"><a href="#招式表" class="headerlink" title="招式表"></a>招式表</h2><table>
+<thead>
+<tr>
+<th>分类</th>
+<th>技能名称</th>
+<th>用气量</th>
+<th>攻击力</th>
+<th>防御力</th>
+<th>攻击方向</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加气类</td>
+<td>加气</td>
+<td>加1气</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>防类</td>
+<td>防</td>
+<td>0</td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>移动类</td>
+<td>上天</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>下地</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>左闪</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>右闪</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>枪类</td>
+<td>枪</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td>中</td>
+<td>可以破神防</td>
+</tr>
+<tr>
+<td></td>
+<td>上枪</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>上</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>下枪</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>下</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>左枪</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>左</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>右枪</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td>右</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>两枪</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>中</td>
+<td>可以破防，可以破神防</td>
+</tr>
+<tr>
+<td>刀类</td>
+<td>短横切</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>左中右</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>长横切</td>
+<td>2</td>
+<td>1</td>
+<td></td>
+<td>左中右</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>上横切</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td>上</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>下横切</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td>下</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>上竖切</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>上中</td>
+<td>可以破神反</td>
+</tr>
+<tr>
+<td></td>
+<td>下竖切</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>下中</td>
+<td>可以破神反</td>
+</tr>
+<tr>
+<td></td>
+<td>环形切</td>
+<td>3</td>
+<td>1</td>
+<td></td>
+<td>上中下左右</td>
+<td></td>
+</tr>
+<tr>
+<td>天气类</td>
+<td>激光</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>上中下</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>电闪雷鸣</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+<td>上中左右</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>山崩地裂</td>
+<td>4</td>
+<td>4</td>
+<td></td>
+<td>下中左右</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>毁灭</td>
+<td>5</td>
+<td>5</td>
+<td></td>
+<td>上中下左右</td>
+<td></td>
+</tr>
+<tr>
+<td>反类</td>
+<td>单反</td>
+<td>1</td>
+<td></td>
+<td>1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>双反</td>
+<td>2</td>
+<td></td>
+<td>2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>三反</td>
+<td>3</td>
+<td></td>
+<td>4</td>
+<td></td>
+<td>反4伤害</td>
+</tr>
+<tr>
+<td>弓类</td>
+<td>弓</td>
+<td>1</td>
+<td>1</td>
+<td></td>
+<td>中</td>
+<td>可破一反</td>
+</tr>
+<tr>
+<td></td>
+<td>双弓</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+<td>中</td>
+<td>可破二反</td>
+</tr>
+<tr>
+<td></td>
+<td>三弓</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td>中</td>
+<td>可破三反</td>
+</tr>
+<tr>
+<td>神类</td>
+<td>神防</td>
+<td>1</td>
+<td></td>
+<td>8</td>
+<td></td>
+<td>不防枪</td>
+</tr>
+<tr>
+<td></td>
+<td>神反</td>
+<td>0</td>
+<td></td>
+<td>5</td>
+<td></td>
+<td>没人打你你就死了</td>
+</tr>
+</tbody></table>
+<h2 id="基本规则"><a href="#基本规则" class="headerlink" title="基本规则"></a>基本规则</h2><p>1.本规则仅适合1v1(多人玩法即将推出，敬请期待)。<br>2.以上的技能，出招时都要辅以手势和话语（招数名）。为了手势的同步，每一回合出招前都要拍手。<br>3.具体流程：拍手→出招（同时喊出招式名）→拍手→出招……，直到有玩家死亡为止。<br>4.开局时气为0。拍手一次，出招即为一个回合。同时拍手后，所有在场上的玩家同时发出“招式”（用手势或语言来表示）。一次只能使用一个招式。<br>5.发动技能时需要消耗气，否则不能发动。<br>6.结算：自己发动招式时，扣减自己拥有的气，不够者算为违规（爆气），在游戏中违规者出招无效并“爆气”（立即判为死亡，敌方每人重新开局）。此外，如果一个人出的手势有问题（模棱两可或者根本没有这种手势），也算违规，判定“爆气”死亡。<br>7.出手姿势：左手掌心朝上，右手掌心朝下。你的右手在对手的左手上方。<br>8.客户端&#x2F;网页版玩法：根据屏幕提示操作即可。</p>
+<h2 id="伤害结算规则"><a href="#伤害结算规则" class="headerlink" title="伤害结算规则"></a>伤害结算规则</h2><p>一．有的攻击招式直接命中目标（敌方使用蓄气状态的技能，我方攻击），敌方收到全部伤害，敌方死亡。<br>二．有的攻击招式打中的目标拥有防御力（对方正在使用防御招式——“防”和“神防”）<br>1.）如果攻击力＞防御力，则自己对其造成伤害，对方死亡。<br>2.）攻击力≤防御力，双方无影响。<br>3.）（特殊）用枪攻击神防，则自己对其造成伤害，对方死亡。<br>三．有的攻击遇到“迎面”的攻击时 （双方都是攻击招式）<br>1.）攻击力较高者对攻击力较低者造成攻击力伤害。<br>2.）如果攻击力相同，则抵消（互相没有伤害）。<br>3.）有的攻击没有打中目标（受方处于不同空间），不会造成伤害。<br>4.）同等伤害的“弓”和除“弓”以外的攻击招式，“弓”的伤害较弱。<br>四．攻击的目标使用反射技能（一反，二反，三反和神反）<br>1.）攻击伤害≤反射力，则攻击方受到伤害并死亡。<br>2.）若攻击伤害＞反射力，则敌方死亡。<br>3.）神反特殊规则：你出神反若别人没打你（空反）或别人对你使用上下竖切，则你死亡。<br>4.）若你使用弓：可以击破相应大小的反射技能。</p>
+<h2 id="其他一些特殊招式规则"><a href="#其他一些特殊招式规则" class="headerlink" title="其他一些特殊招式规则"></a>其他一些特殊招式规则</h2><p>1.）单枪：可以破“神防”。<br>2.）双枪：攻击力为2，但是可以击破“防”可以破“神防”。<br>3.）弓：可以击破相应大小的反射技能。<br>4.）竖切：可破“神反”。<br>6.）神防：可以挡住所有除“枪”和“双枪”以外的攻击。<br>7.）神反：可以反射所有伤害并使敌方死亡！但是对方若没有攻击你或使用“竖切”，则你死亡。</p>
+<h1 id="在线玩拍手游戏"><a href="#在线玩拍手游戏" class="headerlink" title="在线玩拍手游戏"></a>在线玩拍手游戏</h1><p>请访问 <a target="_blank" rel="noopener" href="https://www.clappinggame.top/">https://www.clappinggame.top</a>进行游戏。</p>
+<p><br><br><br><br>版权声明：除非另有说明，否则本站内容依据<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>许可证进行授权，转载请附上出处链接。</p>
+
+      </div>
+      
+      
+      
+    </div>
+    
+
+    
+    
+    
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8B%8D%E6%89%8B%E6%B8%B8%E6%88%8F%E7%8E%A9%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">拍手游戏玩法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%9B%E5%BC%8F%E8%A1%A8"><span class="nav-number">1.1.</span> <span class="nav-text">招式表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99"><span class="nav-number">1.2.</span> <span class="nav-text">基本规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BC%A4%E5%AE%B3%E7%BB%93%E7%AE%97%E8%A7%84%E5%88%99"><span class="nav-number">1.3.</span> <span class="nav-text">伤害结算规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%B8%80%E4%BA%9B%E7%89%B9%E6%AE%8A%E6%8B%9B%E5%BC%8F%E8%A7%84%E5%88%99"><span class="nav-number">1.4.</span> <span class="nav-text">其他一些特殊招式规则</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E7%BA%BF%E7%8E%A9%E6%8B%8D%E6%89%8B%E6%B8%B8%E6%88%8F"><span class="nav-number">2.</span> <span class="nav-text">在线玩拍手游戏</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">clappinggame</p>
+  <div class="site-description" itemprop="description">拍手游戏</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/clappinggame" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;clappinggame" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:clappinggame@foxmail.com" title="E-Mail → mailto:clappinggame@foxmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fas fa-hand-sparkles"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Clappinggame . All Rights Reserved .</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
