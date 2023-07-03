@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon"  href="image/logo.png"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>拍手游戏™ Html5</title>
+
+<link href="css/classical.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+
+	<div class="container-sh">
+		<div class="text-center">
+<h1>拍手游戏™ ClappingGame™</h1>
+			<h3></h3>
+	  
+
+		 
+<hr>
+
+
+			<span id="gm">游戏0</span> <span id="rd">回合0</span> <span>胜利:</span><span id="aw">0</span> <span>失败:</span><span id="bw">0</span> <span id="sl">胜率0%</span>
+	
+			
+	  </div>
+ <div class="container text-center">     
+      <div class="left1">  <img src="image/user2.svg" width="48"><h3>玩家</h3><span>气:</span><span id="aq">0</span><span>  招式:</span><span style="font-size: x-large" id="aa">气</span></div>
+ 
+      <div class="right1">  <img src="image/computer2.svg" width="48"><h3>电脑</h3><span>气:</span><span id="bq">0</span><span>  招式:</span><span style="font-size: x-large" id="bb">气</span> </div>
+  </div>
+<!--<center><span>回合用时:</span><span id="time">0</span></center>-->
+<center><h2 id="timer" style="">www.clappinggame.net</h2></center>
+		<hr>
+<div class="container text-center" id="board" style="display: none;height: 260px;">
+	<!--<button type="button" id="ok" onClick="okok()" class="btn btn-success" style="width:22%;">出招</button>
+<br>-->
+      <span type="button" id="t000" onclick="c000()" class="btn btn-dark" style="width:18%;"><img src="image/000.svg"> 气</span>
+      <span type="button" id="t100" onclick="c100()" class="btn btn-dark" style="width:18%;"><img src="image/100.svg"> 防</span>
+	  <span type="button" id="t410" onclick="c410()" class="btn btn-dark" style="width:18%;"><img src="image/410.svg"> 枪</span>
+      <span type="button" id="t420" onclick="c420()" class="btn btn-dark" style="width:18%;">双枪</span>
+<br>
+	  <span type="button" id="t103" onclick="c103()" class="btn btn-dark" style="width:18%;"><img src="image/103.svg"> 左</span>
+      <span type="button" id="t104" onclick="c104()" class="btn btn-dark" style="width:18%;"><img src="image/104.svg"> 右</span>
+      <span type="button" id="t101" onclick="c101()" class="btn btn-dark" style="width:18%;"><img src="image/101.svg"> 上</span>
+      <span type="button" id="t102" onclick="c102()" class="btn btn-dark" style="width:18%;"><img src="image/102.svg"> 下</span>
+<br>
+      <span type="button" id="t413" onclick="c413()" class="btn btn-dark" style="width:18%;">左枪</span>
+      <span type="button" id="t414" onclick="c414()" class="btn btn-dark" style="width:18%;">右枪</span>
+      <span type="button" id="t411" onclick="c411()" class="btn btn-dark" style="width:18%;">上枪</span>
+      <span type="button" id="t412" onclick="c412()" class="btn btn-dark" style="width:18%;">下枪</span>
+
+<br>   
+      <span type="button" id="t520" onclick="c520()" class="btn btn-dark" style="width:18%;">横切</span>
+      <span type="button" id="t535" onclick="c535()" class="btn btn-dark" style="width:18%;">圆切</span>
+      <span type="button" id="t521" onclick="c521()" class="btn btn-dark" style="width:18%;">上切</span>
+      <span type="button" id="t522" onclick="c522()" class="btn btn-dark" style="width:18%;">下切</span>
+<br>    
+      <span type="button" id="t630" onclick="c630()" class="btn btn-dark" style="width:18%;">激光</span>
+      <span type="button" id="t655" onclick="c655()" class="btn btn-dark" style="width:18%;">毁灭</span>
+      <span type="button" id="t641" onclick="c641()" class="btn btn-dark" style="width:18%;">闪电</span>
+      <span type="button" id="t642" onclick="c642()" class="btn btn-dark" style="width:18%;">地震</span>
+      
+<br>    
+      <span type="button" id="t210" onclick="c210()" class="btn btn-dark" style="width:18%;">反弹</span>
+      <span type="button" id="t220" onclick="c220()" class="btn btn-dark" style="width:18%;">二反</span>
+      <span type="button" id="t230" onclick="c230()" class="btn btn-dark" style="width:18%;">三反</span>
+	  <span type="button" id="t250" onclick="c250()" class="btn btn-dark" style="width:18%;">神反</span>
+<br>
+      <span type="button" id="t310" onclick="c310()" class="btn btn-dark" style="width:18%;">弓箭</span>
+      <span type="button" id="t320" onclick="c320()" class="btn btn-dark" style="width:18%;">二弓</span>
+      <span type="button" id="t330" onclick="c330()" class="btn btn-dark" style="width:18%;">三弓</span>
+      <span type="button" id="t180" onclick="c180()" class="btn btn-dark" style="width:18%;">神防</span>
+	<br>
+
+		</div>  
+		<div class="container text-center" id="menu" style="display: block;height: 260px;">
+			<h1 id="ask">欢迎试玩拍手游戏!</h1>
+		 <button type="button" id="g1" onClick="g1()" class="btn btn-primary" style="font-size: 2rem;"> 开始游戏 </button><br>
+		 <a type="button" id="g3" href="index.html" class="btn btn-primary" style="text-decoration-line: none;">新UI</a>
+		<a type="button" id="g3" href="tutorial.html" class="btn btn-primary" style="text-decoration-line: none;">游戏教程</a><br>
+			<center>
+			
+			  <input class="form-check-input" type="radio" name="RadioGroup1" id="mansu" checked="true">
+			    <label class="form-check-label" for="mansu">慢速 </label>
+				<input class="form-check-input" type="radio" name="RadioGroup1" id="kuaisu">
+			    <label class="form-check-label" for="kuaisu">快速 </label>
+			   
+			</center>
+			
+<p>		<br>
+原clappinggame.top已迁移至clappinggame.net
+<br>
+新版clappinggame修复了许多Bug且重新设计了UI	
+		  </p>
+		
+		</div>
+		<hr>
+		<h4>Copyright © 2023 ClappingGame. All rights reserved.
+			<br>拍手游戏ClappingGame是开放源代码的免费软件. 特别感谢您的支持.</h4>
+		<p>
+			<a href="https://github.com/clappinggame/clappinggame"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/badge/View source code on GitHub-+-6699ff?style=flat-square&logo=github"></a>
+			<a href="https://github.com/clappinggame/clappinggame/stargazers"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/github/stars/clappinggame/clappinggame?style=flat-square"></a>
+			<a href="https://github.com/clappinggame/clappinggame/network"><img alt="GitHub forks" src="https://cdn.cloud.js.cool/shields/github/forks/clappinggame/clappinggame?style=flat-square"></a>
+			<a href="https://github.com/clappinggame/clappinggame/blob/main/LICENSE"><img alt="GitHub license" src="https://cdn.cloud.js.cool/shields/github/license/clappinggame/clappinggame?style=flat-square"></a>
+			<img alt="GitHub top language" src="https://cdn.cloud.js.cool/shields/github/languages/top/clappinggame/clappinggame?style=flat-square">
+		</p>
+	</div>
+<br>
+	<script src="js/game.js"></script>
+</body>
+</html>
