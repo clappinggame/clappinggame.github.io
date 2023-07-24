@@ -919,3 +919,6 @@ document.getElementById("gm").innerHTML = "游戏" + winr;
 document.getElementById("board").style.display="block";
 	document.getElementById("menu").style.display="none";okok();
 }
+//quick_start
+var q = window.location.search;
+if(q == "?playnow") {g1();}

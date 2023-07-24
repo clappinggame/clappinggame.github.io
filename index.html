@@ -6,33 +6,21 @@
 	<link rel="shortcut icon"  href="image/logo.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>拍手游戏™ Html5</title>
-
 <link href="css/style.css" rel="stylesheet" type="text/css">
-  
 </head>
 <body>
-
 	<div class="container-sh">
 		<div class="text-center">
-<h1 style="color: skyblue;">拍手游戏™ ClappingGame™</h1>
-			<h3></h3>
-	  
-
-		 
-<hr>
-
-
-			<span id="gm">游戏0</span> <span id="rd">回合0</span> <span>胜利:</span><span id="aw">0</span> <span>失败:</span><span id="bw">0</span> <span id="sl">胜率0%</span>
-	
-			
+<h1>拍手游戏™ ClappingGame™</h1>
+<hr><span id="gm">游戏0</span> <span id="rd">回合0</span> <span>胜利:</span><span id="aw">0</span> <span>失败:</span><span id="bw">0</span> <span id="sl">胜率0%</span>
 	  </div>
  <div class="container text-center">     
-      <div class="left1">  <img src="image/user.svg" width="48"><h3>玩家</h3><span>气:</span><span id="aq">0</span><span>  招式:</span><span style="font-size: x-large" id="aa">气</span></div>
+      <div class="left1">  <img src="image/user2.svg" width="48"><h3>玩家</h3><span>气:</span><span id="aq">0</span><span>  招式:</span><span style="font-size: x-large" id="aa">气</span></div>
  
-      <div class="right1">  <img src="image/computer.svg" width="48"><h3>电脑</h3><span>气:</span><span id="bq">0</span><span>  招式:</span><span style="font-size: x-large" id="bb">气</span> </div>
+      <div class="right1">  <img src="image/computer2.svg" width="48"><h3>电脑</h3><span>气:</span><span id="bq">0</span><span>  招式:</span><span style="font-size: x-large" id="bb">气</span> </div>
   </div>
 <!--<center><span>回合用时:</span><span id="time">0</span></center>-->
-<center><h2 id="timer" >www.clappinggame.net</h2></center>
+<center><h2 id="timer">clappinggame.github.io</h2></center>
 		<hr>
 <div class="container text-center" id="board" style="display: none;height: 260px;">
 	<!--<button type="button" id="ok" onClick="okok()" class="btn btn-success" style="width:22%;">出招</button>
@@ -73,44 +61,41 @@
       <span type="button" id="t320" onclick="c320()" class="btn btn-dark" style="width:18%;">二弓</span>
       <span type="button" id="t330" onclick="c330()" class="btn btn-dark" style="width:18%;">三弓</span>
       <span type="button" id="t180" onclick="c180()" class="btn btn-dark" style="width:18%;">神防</span>
-	<br>
+
 
 		</div>  
 		<div class="container text-center" id="menu" style="display: block;height: 260px;">
 			<h1 id="ask">欢迎试玩拍手游戏!</h1>
-		 <button type="button" id="g1" onClick="g1()" class="btn btn-primary" style="font-size: 2rem;"> 开始游戏 </button><br>
-		 <a type="button" id="g3" href="classical.html" class="btn btn-primary" style="text-decoration-line: none;">经典UI</a>
-		<a type="button" id="g3" href="tutorial.html" class="btn btn-primary" style="text-decoration-line: none;">游戏教程</a><br>
-			<center>
-			
+		 <button type="button" id="g1" onClick="g1()" class="btn btn-primary" style="font-size: 2rem;width: 31%;"> 开始游戏 </button><br>
+		<a type="button" id="g3" href="tutorial.html" target="_blank" class="btn btn-primary" style="text-decoration-line: none;width: 27%;"> 游戏教程 </a><br>
+<span style="font-weight: bold;">游戏选项</span><br>
+			<center><span style="font-weight: bold;">速度 : </span>
 			  <input class="form-check-input" type="radio" name="RadioGroup1" id="mansu" checked="true">
 			    <label class="form-check-label" for="mansu">慢速 </label>
 				<input class="form-check-input" type="radio" name="RadioGroup1" id="kuaisu">
 			    <label class="form-check-label" for="kuaisu">快速 </label>
-			   
 			</center>
-			
-<p>		<br>
-原clappinggame.top已迁移至clappinggame.net
-<br>
-新版clappinggame修复了许多Bug且重新设计了UI	
-		  </p>
-		
+			<center><span style="font-weight: bold;">电脑 : </span>
+				<input class="form-check-input" type="radio" name="RadioGroup2" id="easy" checked="true">
+				  <label class="form-check-label" for="easy">简单 </label>
+				  <input class="form-check-input" type="radio" name="RadioGroup2" id="hard">
+				  <label class="form-check-label" for="hard">困难 </label>
+			  </center>
+			  <br><p style="font-size: x-small;">版本 : 2023.7.24</p>
 		</div>
 		<hr>
 		<div class="container text-center"> 
-			<h4>Copyright © 2023 ClappingGame. All rights reserved.
-				<br>拍手游戏ClappingGame是开放源代码的免费软件. 特别感谢您的支持.</h4>
-			<p>
-				<a href="https://github.com/clappinggame/clappinggame.github.io"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/badge/View%20source%20code%20on%20GitHub-By%20Innovate+-6699ff?style=flat-square&logo=github"></a>
-			</p>
-			<p>
-				<a href="https://github.com/innovateplus"><img src="image/i.svg" style="width: 30%;height: auto;"></a>
-			</p>
-			
-			</div>
+		<h4>Copyright © 2023 ClappingGame. All rights reserved.
+			<br>拍手游戏ClappingGame是开放源代码的免费软件, 欢迎自由传播, 也可任意修改, 特别感谢您的支持. 本软件在GPL-3.0License下许可分发.</h4>
+		<p>
+			<a href="https://github.com/clappinggame/clappinggame.github.io"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/badge/View%20source%20code%20on%20GitHub-在GitHub上查看软件源代码-777777?style=flat-square&logo=github"></a>
+		</p>
+		<p>
+			<a href="https://github.com/innovateplus"><img src="image/i.svg" style="width: 30%;height: auto;"></a>
+		</p>
+		
+		</div>
 	</div>
-<br>
 	<script src="js/game.js"></script>
 </body>
 </html>
